@@ -1,3 +1,8 @@
+// Ryan Lau
+// APCS
+// HW05 -- How Was Your Summer?
+// 2021-09-28
+
 public class Loops {
     public static void main(String[] args) {
         System.out.println(power(4.0, 10)); // 1048576.0

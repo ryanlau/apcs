@@ -1,3 +1,8 @@
+Ryan Lau  
+APCS  
+HW03 -- Codify the Revisions  
+2021-09-24  
+
 ### What is base x?
 Base x means that there are x possible values for each digit in the number. Each place value represents a power of x, starting with the rightmost place and moving left with x<sup>0</sup>, then x<sup>1</sup>, etc. 
 Base two means that there are two possible values per digit and base ten means that there are ten possible values/digit.

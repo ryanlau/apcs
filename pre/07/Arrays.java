@@ -1,3 +1,8 @@
+// Ryan Lau
+// APCS
+// HW05 -- How Was Your Summer?
+// 2021-09-28
+
 import java.lang.Math;
 import java.util.Random;
 

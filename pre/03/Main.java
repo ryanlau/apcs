@@ -1,9 +1,7 @@
-/*
-Ryan Lau
-APCS
-HW05 -- How Was Your Summer?
-2021-09-28
-*/
+// Ryan Lau
+// APCS
+// HW05 -- How Was Your Summer?
+// 2021-09-28
 
 public class Main {
     public static void zoop() {
