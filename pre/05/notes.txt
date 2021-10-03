@@ -1,0 +1,6 @@
+Ryan Lau
+APCS
+HW05 -- How Was Your Summer?
+2021-09-28
+
+There can be multiple "versions" of a method with the same name as long as the inputs are different. This is called overloading. Java will assume which version is trying to be referenced based on the inputs.

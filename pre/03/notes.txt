@@ -1,0 +1,8 @@
+Ryan Lau
+APCS
+HW05 -- How Was Your Summer?
+2021-09-28
+
+The arguments and return type of a method are defined during its declaration unlike functions in Python.
+
+"void" can be used if there is no return value for a method.

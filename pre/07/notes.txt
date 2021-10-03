@@ -1,0 +1,9 @@
+Ryan Lau
+APCS
+HW05 -- How Was Your Summer?
+2021-09-28
+
+Arrays in Java have a fixed size and type.
+int[] a = new int[5];
+
+Arrays can be printed with Arrays.toString(a).
