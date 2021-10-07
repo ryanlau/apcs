@@ -1,4 +1,4 @@
-// TNPG: Orion (Ryan Lau and Brian Kang)
+// TNPG: Orion (Ryan Lau, Brian Kang, Jon, and Vivian)
 // APCS
 // HW13 -- Where do BigSibs Come From?
 // 2021-10-06

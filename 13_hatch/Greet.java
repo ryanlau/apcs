@@ -1,4 +1,4 @@
-// TNPG: Orion (Ryan Lau and Brian Kang)
+// TNPG: Orion (Ryan Lau, Brian Kang, Jon, and Vivian)
 // APCS
 // HW13 -- Where do BigSibs Come From?
 // 2021-10-06
@@ -7,6 +7,7 @@
 DISCOVERIES
 
 UNRESOLVED QUESTIONS
+    0. How can we provide arguments to the declaration of a instance of a class?
 */
 
 public class Greet {
