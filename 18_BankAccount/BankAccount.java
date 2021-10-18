@@ -1,4 +1,4 @@
-// TNPG: AJR (Ameer, Jefford, Ryan)
+// TNPG: AJR (Ameer Alnasser, Jefford Shau, Ryan Lau)
 // APCS
 // HW18 -- CPA-One
 // 2021-10-14
