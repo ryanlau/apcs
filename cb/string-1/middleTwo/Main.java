@@ -13,6 +13,6 @@ public class Main {
      * least 2.
      */
     public static String middleTwo(String str) {
-        
+        return str.substring(str.length() / 2 - 1, str.length() / 2 + 1);
     }
 }

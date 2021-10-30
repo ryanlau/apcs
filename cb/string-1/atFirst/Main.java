@@ -12,6 +12,14 @@ public class Main {
      * the string length is less than 2, use '@' for the missing chars.
      */
     public static String atFirst(String str) {
-        
+        if (str.length() == 0) {
+            return "@@";
+        }
+
+        if (str.length() == 1) {
+            return str + "@";
+        }
+
+        return str.substring(0, 2);
     }
 }

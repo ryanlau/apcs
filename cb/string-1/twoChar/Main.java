@@ -13,6 +13,14 @@ public class Main {
      * length 2, use the first 2 chars. The string length will be at least 2.
      */
     public static String twoChar(String str, int index) {
-        
+        if (index < 0) {
+            return str.substring(0, 2);
+        }
+
+        if (index + 2 > str.length()) {
+            return str.substring(0, 2);
+        }
+
+        return str.substring(index, index + 2);
     }
 }

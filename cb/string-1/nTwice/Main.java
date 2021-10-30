@@ -12,6 +12,8 @@ public class Main {
      * chars from the string. The string length will be at least n.
      */
     public static String nTwice(String str, int n) {
-        
+        String firstN = str.substring(0, n);
+        String lastN = str.substring(str.length() - n);
+        return firstN + lastN;
     }
 }

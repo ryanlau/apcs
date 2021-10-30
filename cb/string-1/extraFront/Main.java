@@ -13,6 +13,16 @@ public class Main {
      * than 2 chars, use whatever is there.
      */
     public static String extraFront(String str) {
-        
+        if (str.length() == 0) {
+            return "";
+        }
+
+        if (str.length() == 1) {
+            return str + str + str;
+        }
+
+        String firstTwo = str.substring(0, 2);
+
+        return firstTwo + firstTwo + firstTwo;
     }
 }

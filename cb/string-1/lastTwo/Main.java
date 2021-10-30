@@ -12,6 +12,14 @@ public class Main {
      * if present, are swapped, so "coding" yields "codign".
      */
     public static String lastTwo(String str) {
-        
+        if (str.length() < 2) {
+            return str;
+        }
+
+        String first = str.substring(0, str.length() - 2);
+        String last = str.substring(str.length() - 1);
+        String secondLast = str.substring(str.length() - 2, str.length() - 1);
+
+        return first + last + secondLast;
     }
 }

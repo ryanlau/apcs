@@ -13,6 +13,21 @@ public class Main {
      * is length 0, use '@' for its missing char.
      */
     public static String lastChars(String a, String b) {
+        String firstA;
+        String lastB;
+
+        if (a.length() == 0) {
+            firstA = "@";
+        } else {
+            firstA = a.substring(0, 1);
+        }
+
+        if (b.length() == 0) {
+            lastB = "@";
+        } else {
+            lastB = b.substring(b.length() - 1);
+        }
         
+        return firstA + lastB;
     }
 }

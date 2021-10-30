@@ -14,6 +14,10 @@ public class Main {
      * string. So "Hello" and "Hi" yield "loHi". The strings may be any length.
      */
     public static String minCat(String a, String b) {
-        
+        if (a.length() > b.length()) {
+            return a.substring(a.length() - b.length()) + b;
+        } else {
+            return a + b.substring(b.length() - a.length());
+        }
     }
 }

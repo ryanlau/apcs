@@ -14,6 +14,20 @@ public class Main {
      * strings.
      */
     public static boolean hasBad(String str) {
-        
+        if (str.length() <= 2) {
+            return false;
+        }
+
+        if (str.substring(0, 3).equals("bad")) {
+            return true;
+        }
+
+        if (str.length() > 3) {
+            if (str.substring(1, 4).equals("bad")) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

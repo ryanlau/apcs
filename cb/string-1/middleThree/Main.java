@@ -12,6 +12,6 @@ public class Main {
      * so "Candy" yields "and". The string length will be at least 3.
      */
     public static String middleThree(String str) {
-        
+        return str.substring(str.length() / 2 - 1, str.length() / 2 + 2);
     }
 }

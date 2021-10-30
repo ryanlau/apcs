@@ -16,6 +16,20 @@ public class Main {
      * word will be at least length 1.
      */
     public static String startWord(String str, String word) {
-        
+        if (str.length() < word.length()) {
+            return "";
+        }
+
+        if (word.length() == 1) {
+            return str.substring(0, 1);
+        }
+
+        String wordToMatch = word.substring(1);
+
+        if (str.substring(1, 1 + wordToMatch.length()).equals(wordToMatch)) {
+            return str.substring(0, word.length());
+        }
+
+        return "";
     }
 }
