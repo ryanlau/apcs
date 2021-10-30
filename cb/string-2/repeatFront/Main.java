@@ -14,6 +14,14 @@ public class Main {
      * the string, inclusive (i.e. n >= 0 and n <= str.length()).
      */
     public static String repeatFront(String str, int n) {
+        String ans = "";
+        String firstN = str.substring(0, n);
         
+        while (firstN.length() > 0) {
+            ans += firstN;
+            firstN = firstN.substring(0, firstN.length() - 1);
+        }
+
+        return ans;
     }
 }

@@ -13,6 +13,32 @@ public class Main {
      * So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
      */
     public static String starOut(String str) {
-        
+        String ans = "";
+        int i = 0;
+
+        while (i < str.length()) {
+            if (!(str.substring(i, i + 1).equals("*"))) {
+                if (i == 0) {
+                    if (str.length() == 1) {
+                        return str;
+                    }
+
+                    if (!(str.substring(i + 1, i + 2).equals("*"))) {
+                        ans += str.substring(i, i + 1);
+                    }
+                } else if (i == str.length() - 1) {
+                    if (!(str.substring(i - 1, i).equals("*"))) {
+                        ans += str.substring(i, i + 1);
+                    }
+                } else {
+                    if (!(str.substring(i - 1, i).equals("*")) && !(str.substring(i + 1, i + 2).equals("*"))) {
+                        ans += str.substring(i, i + 1);
+                    }
+                }
+            }
+            i++;
+        }
+
+        return ans;
     }
 }

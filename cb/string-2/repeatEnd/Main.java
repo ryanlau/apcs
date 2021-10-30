@@ -13,6 +13,13 @@ public class Main {
      * the length of the string, inclusive.
      */
     public static String repeatEnd(String str, int n) {
+        String ans = "";
+        String lastN = str.substring(str.length() - n);
         
+        for (int i = 0; i < n; i++) {
+            ans += lastN;
+        }
+
+        return ans;
     }
 }

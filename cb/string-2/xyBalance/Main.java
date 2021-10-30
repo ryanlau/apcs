@@ -14,6 +14,16 @@ public class Main {
      * true if the given string is xy-balanced.
      */
     public static boolean xyBalance(String str) {
-        
+        for (int i = str.length(); i > 0; i--) {
+            if (str.substring(i - 1, i).equals("x")) {
+                return false;
+            }
+
+            if (str.substring(i - 1, i).equals("y")) {
+                return true;
+            }
+        }
+
+        return true;
     }
 }

@@ -14,6 +14,35 @@ public class Main {
      * a char may be included twice if it is between two words.
      */
     public static String wordEnds(String str, String word) {
+        if (str == word) {
+            return "";
+        }
+
+        String ans = "";
+
+        int i = 0;
+        while (i < str.length()) {
+            if (i < str.length() - word.length()) {
+                if (str.substring(i, i + word.length()).equals(word)) {
+                    if (i == 0) {
+                        ans += str.substring(i + word.length(), i + word.length() + 1);
+                        i += word.length();
+                    } else {
+                        ans += str.substring(i - 1, i);
+                        ans += str.substring(i + word.length(), i + word.length() + 1);
+                        i += word.length();
+                    }
+                } else {
+                    i++;
+                }
+            } else {
+                if (str.substring(i).equals(word)) {
+                    ans += str.substring(i - 1, i);
+                }
+                i = str.length();
+            }
+        }
         
+        return ans;
     }
 }

@@ -14,6 +14,13 @@ public class Main {
      * group of fewer than 3 chars at the end.
      */
     public static String oneTwo(String str) {
-        
+        String ans = "";
+
+        while (str.length() >= 3) {
+            ans += str.substring(1, 3) + str.substring(0, 1);
+            str = str.substring(3);
+        }
+
+        return ans;
     }
 }

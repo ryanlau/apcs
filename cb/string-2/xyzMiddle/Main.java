@@ -13,6 +13,14 @@ public class Main {
      * "xyz" must differ by at most one. This problem is harder than it looks.
      */
     public static boolean xyzMiddle(String str) {
-        
+        for (int i = 0; i <= str.length() - 3; i++) {
+            if (str.substring(i, i + 3).equals("xyz")) {
+                if (str.length() - (i  + i + 3) >= -1 && str.length() - (i  + i + 3) <= 1) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }

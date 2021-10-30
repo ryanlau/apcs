@@ -13,6 +13,19 @@ public class Main {
      * words, the middle letter is gone, so "zipXzap" yields "zpXzp".
      */
     public static String zipZap(String str) {
-        
+        String ans = "";
+        while (str.length() > 2) {
+            if (str.substring(0, 1).equals("z") && str.substring(2, 3).equals("p")) {
+                ans += "zp";
+                str = str.substring(3);
+            } else {
+                ans += str.substring(0, 1);
+                str = str.substring(1);
+            }
+        }
+
+        ans += str;
+
+        return ans;
     }
 }

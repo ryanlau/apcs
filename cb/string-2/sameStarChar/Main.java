@@ -12,6 +12,16 @@ public class Main {
      * both immediately before and after the star, they are the same.
      */
     public static boolean sameStarChar(String str) {
-        
+        for (int i = 0; i < str.length(); i++) {
+            if (str.substring(i, i + 1).equals("*")) {
+                if (!(i == 0 || i == str.length() - 1)) {
+                    if (!(str.substring(i - 1, i).equals(str.substring(i + 1, i + 2)))) {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return true;
     }
 }

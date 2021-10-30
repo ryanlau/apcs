@@ -12,6 +12,16 @@ public class Main {
      * count occurrences of the word, separated by the separator string.
      */
     public static String repeatSeparator(String word, String sep, int count) {
-        
+        if (count == 0) {
+            return "";
+        }
+
+        String ans = word;
+
+        for (int i = 1; i < count; i++) {
+            ans += sep + word;
+        }
+
+        return ans;
     }
 }

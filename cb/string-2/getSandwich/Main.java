@@ -14,6 +14,23 @@ public class Main {
      * of bread.
      */
     public static String getSandwich(String str) {
+        int firstBread = -1;
+        int lastBread = -1;
+
+        for (int i = 0; i < str.length() - 4; i++) {
+            if (str.substring(i, i + 5).equals("bread")) {
+                if (firstBread == -1) {
+                    firstBread = i;
+                } else {
+                    lastBread = i;
+                }
+            }
+        }
         
+        if (firstBread == -1 || lastBread == -1) {
+            return "";
+        }
+
+        return str.substring(firstBread + 5, lastBread);
     }
 }
