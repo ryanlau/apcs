@@ -1,7 +1,7 @@
 // TNPG: AJR (Ameer Alnasser, Jefford Shau, Ryan Lau)
 // APCS
-// HW31 -- Otnay Ybay ethay Airhay Onway Ymay Inneechay Inchay Inchay
-// 2021-11-03
+// L00: Etterbay Odingcay Oughthray Ollaborationcay
+// 2021-11-08
 // time spent: 0.5 hrs
 
 /*
@@ -14,6 +14,17 @@ UNRESOLVED QUESTIONS
     1. How do we implement the DemoScanner to take in lines from in.words?
     2. How do we know if a y in a string is a vowel?
     3. What constitutes a word as having multiple consonants at the beginning of the word?
+
+TODO
+    - [X] Feed Pig
+    - [X] Debug Thluffy's translator
+    - [X] Add new methods from library to Pig
+    - [X] Implement support for basic words
+    - [ ] Implement support for y
+    - [ ] Implement support for multiple consonants at beginning of word
+    - [ ] Implement support for capitalization
+    - [ ] Implement support for punctuation
+    - [ ] Use Scanner to read from in.words
 */
 
 /***
