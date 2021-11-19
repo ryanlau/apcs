@@ -1,0 +1,38 @@
+Ryan Lau
+APCS
+HW36 -- All Quacked Up
+2021-11-18
+time spent: 0.6 hrs
+
+notes on Thinkjava Appendix D Debugging
+https://books.trinket.io/thinkjava2/appendix-d.html
+
+three types of errors, each with it's own approach to debugging:
+    1. compile time: something is wrong with syntax
+    2. runtime: something goes wrong while program is running
+    3. logic error: code doesn't operate in expected way
+
+debugging compile time errors:
+    1. use incremental development to avoid searching for where the error may lie
+    2. only the first error message is reliable
+    3. error messages can contain important information such as when the compiler noticed the error
+    4. error messages at a method invocation may mean the error is in the method definition
+    5. error messages can sometimes be wrong
+    6. USE AS A DESPERATE MEASURE: debugging by bisection:
+        a. backup code: Bob.java -> Bob.java.old
+        b. delete half of the broken code and compile, if it compiles, the error is in the other half
+        c. repeat until you find the error
+
+debugging runtime errors:
+    1. program hangs (program appears to stop or do nothing) generally mean that there is an infiite loop or recursion (StackOverflowError)
+        a. add print statements before and after loops that may be the source of issue
+    2. read the name of the Exception and then examing the location where the Exception was raised
+
+debugging logic errors:
+    1. ask yourself if the program is doing something that it shouldn't and/or vice versa
+    2. break code into components and test them individually
+    3. rewrite complex expressions into a series of assignments to temporarily values to make the code more readable
+    4. walk away from the computer in times of range
+        a. "good places to find bugs are buses, showers, and bed"
+    5. generally when you explain the problem, you will find the answer so try explaining the problem to a ducky
+    6. as a last resort, ask someone else for help given that you understand the problem enough it describe in concisely. you should also give them any information they need
