@@ -1,4 +1,3 @@
-// hi
 // TNPG: All Brians (Brian Kang, Brian Wang, Ryan Lau)
 // APCS
 // HW42 -- Be More Rational
