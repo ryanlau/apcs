@@ -131,7 +131,7 @@ public class SuperArray implements ListInt
     //main method for testing
     public static void main( String[] args )
     {
-        SuperArray bob = new SuperArray();
+        ListInt bob = new SuperArray();
         for (int i = 0; i < 11; i++) {
             bob.add(i);
         }
