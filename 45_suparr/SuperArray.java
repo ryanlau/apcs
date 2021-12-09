@@ -1,7 +1,7 @@
 // TNPG: All Brians (Brian Kang, Brian Wang, Ryan Lau)
 // APCS
-// HW44 -- Array of Grade 316
-// 2021-12-07
+// HW45 -- Array of Titanium
+// 2021-12-08
 // time spent: 0.5 hrs
 
 /*
