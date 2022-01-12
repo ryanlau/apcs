@@ -28,7 +28,7 @@ import java.util.ArrayList;
 public class MySorts {
     public static void bubbleSort( ArrayList<Comparable> data )
     {
-        for( passCount = 0; passCount < data.size() - 1; passCount++ ) {
+        for( int passCount = 0; passCount < data.size() - 1; passCount++ ) {
             //iterate thru first to next-to-last element, comparing to next
             for( int i = 0; i < data.size()-1; i++ ) {
 
