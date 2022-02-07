@@ -7,7 +7,7 @@ time spent:  1.0 hrs
 DISCO
 ------------------------------------------------
 * Integer division will disregard the decimal places essentially flooring the result so 7 / 3 = 2
-* NullPointerExceptions are probably caused by uninitialized variables
+* NullPointerExceptions are probably caused by uninitialized variables, in the sense that we did not declare the ArrayList inside the method, which gave us a NullPointerException.
 ================================================
 
 
@@ -15,6 +15,7 @@ QCC
 ------------------------------------------------
 * How can we easily tell what n refers to for big O notation?
 * How do you pronounce Mykolyk?
+* What is the time notation of printHistogram?
 ================================================
 
 
@@ -28,11 +29,11 @@ isLocalMode: O(1)
 
 getLocalModes: O(n)
 
-printHistogram: O(n^2)
+printHistogram: O(n)
 ================================================
 
 
 MISC
 ------------------------------------------------
-* 
+* Why is the school computer so slow some days?
 ================================================
