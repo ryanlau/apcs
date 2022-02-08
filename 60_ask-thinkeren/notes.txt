@@ -1,0 +1,37 @@
+BAR Mitzvah (Ameer Alnasser, ben Belotser, Michael Kamela, Ryan Lau)
+APCS pd6
+HW60 -- A Termite is-a Turtle, a Thinker is-a Turtle
+2022-02-07m
+time spent: 0.5 hr
+
+
+DISCO
+------------------------------------------------
+* When you recieve an unsorted deck of cards, you must split it evenly to two other people. You don't keep a card.
+* When you recieve a single card, you return it to who gave it to you.
+* When and if you recieve two sorted decks of cards, you should sort the two decks and the sorted deck to who gave you an unsorted deck of cards.
+================================================
+
+
+QCC
+------------------------------------------------
+* What is the minimum number of thinkeren required to sort a deck of 52 (or n) cards this way?
+* Can thinkeren who gave unsorted cards away and are waiting for them to come back sorted recieve more unsorted cards from a different thinker?
+================================================
+
+
+THINKER FIRMWARE
+------------------------------------------------
+* Raise hand to indicate you have not recieved any cards yet.
+* Wait for a deck to be placed into your hands and remember who gave you the cards.
+* If you recieved only one card give the card back to who gave you the cards, and lower your hand to indicate you have finished your job.
+* If you recieved more than one card, evenly split the deck into two decks and find two thinkeren who have their hand raised and give each thinker a deck.
+* Raise both hands to the side to indicate you are waiting for those two thinkeren to each return a sorted deck.
+* Once both decks have been returned, sort the two sorted decks and then give the sorted deck to who you originally recieved your deck from, and lower your hands to indicate you have finished your job.
+================================================
+
+
+useful links copied from assignments page:
+https://ccl.northwestern.edu/netlogo/models/Termites
+https://www.lifewire.com/what-is-firmware-2625881
+
