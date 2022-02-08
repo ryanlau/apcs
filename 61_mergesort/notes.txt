@@ -1,0 +1,44 @@
+// Team Gnocchi -- Hugo Jenkins and Ryan Lau
+// APCS pd6
+// HW61 -- Instructions so Simple...
+// 2022-02-08t
+// time spent: .5hrs
+
+DISCO
+------------------------------------------------
+* When you receive an unsorted deck of cards, you must split it evenly to two other people. You don't keep a card.
+* When you receive a single card, you return it to who gave it to you.
+* When and if you receive two sorted decks of cards, you should sort the two decks and the sorted deck to who gave you an unsorted deck of cards.
+================================================
+
+
+QCC
+------------------------------------------------
+* What is the minimum number of thinkeren required to sort a deck of 52 (or n) cards this way?
+* Can thinkeren who gave unsorted cards away and are waiting for them to come back sorted receive more unsorted cards from a different thinker?
+* How does MergeSort compare to the other sorting algorithms that we've learned?
+================================================
+
+
+THINKER FIRMWARE
+------------------------------------------------
+* Raise hand to indicate you have not received any cards yet.
+* Wait for a deck to be placed into your hands and remember who gave you the cards.
+* If you received only one card give the card back to who gave you the cards, and lower your hand to indicate you have finished your job.
+* If you received more than one card, evenly split the deck into two decks and find two thinkeren who have their hand raised and give each thinker a deck.
+* Raise both hands to the side to indicate you are waiting for those two thinkeren to each return a sorted deck.
+* Once both decks have been returned, merge the two sorted decks and then give the sorted deck to who you originally received your deck from, and lower your hands to indicate you have finished your job.
+================================================
+
+
+MERGESORT Algorithm
+------------------------------------------------
+* Compare the first items of the two lists
+* Add the lower one to the new list and remove it from the list from which it was taken
+* Repeat until all of the items are in the new list
+================================================
+
+
+useful links copied from assignments page:
+https://ccl.northwestern.edu/netlogo/models/Termites
+https://www.lifewire.com/what-is-firmware-2625881
