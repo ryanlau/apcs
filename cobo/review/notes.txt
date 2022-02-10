@@ -1,0 +1,23 @@
+ACTIVITY 1
+
+1a. public static double sentimentVal(String)
+
+1b. Yes, it requires a String parameter. If you pass a different type of parameter, the compiler will return a error saying that the different type cannot be converted to a String:
+
+ReviewDriver.java:4: error: incompatible types: int cannot be converted to String
+
+1c. This method returns a double.
+
+2.
+
+Method Call           | Return Value
+=====================================
+sentimentVal("hello") | 0.75
+sentimentVal("bob")   | -0.16
+sentimentVal("ryan")  | 0.04
+
+3a. This will compile because sentimentVal was called with a single String parameter and the return type is a double which matches the signature of sentimentVal.
+
+3b. This will not compile because sentimentVal was called with a double parameter and the return type is a String which does not match the signature of sentimentVal.
+
+3c. This will not compile because sentimentVal was called with a two String parameters which does not match the signature of sentimentVal.
