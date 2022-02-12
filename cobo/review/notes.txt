@@ -1,3 +1,9 @@
+Team Gnocchi -- Hugo Jenkins (Boary), Ryan Lau (Jon), and Brian Kang (Vivian)
+APCS pd6
+L06 -- Read/Review/Expand
+2022-02-11f
+time spent: .5hrs
+
 ACTIVITY 1
 
 1a. public static double sentimentVal(String)
@@ -21,3 +27,26 @@ sentimentVal("ryan")  | 0.04
 3b. This will not compile because sentimentVal was called with a double parameter and the return type is a String which does not match the signature of sentimentVal.
 
 3c. This will not compile because sentimentVal was called with a two String parameters which does not match the signature of sentimentVal.
+
+
+ACTIVITY 2
+
+4. The totalSentiment method works by iterating over each word, removing the punctuation, and then looking up the sentiment value of the word with sentimentVal and adding the value to a total variable. We return this variable at the end of the method
+
+5a. Yes because the greater the total sentiment value, the more stars the review gets.
+
+5b. Neutral (zero sentiment value) ratings will receive a star rating of 2 and negative ratings will receive a star rating of 1 or 0. This is because currently negative ratings will get the same star rating of 1 as ratings with sentiment values up to 5. We will also make sure that any positive total sentiment value ratings will recieve a 3 or 4 stars.
+
+6a. The logical error is that totalSentiment that is less than 15 will get 4 stars and any review with a totalSentiment that is equal to or greater than 15 will get 0 stars.
+    For example, a review with a totalSentiment value of 20 will get 0 stars where a totalSentiment value of -5 will get 4 stars.
+
+6b. We can fix it by reversing the order of the boolean expressions.
+
+
+ACTIVITY 3
+
+3. indexOf returns the index of the first occurence of the inputted String on the String it was called on. substring returns the part of the String it was called on that is within the integer indexes provided to the method. You should add 1 to the position of the space when copying the remainder of the string because we don't want the space itself.
+
+5. You do not need to create an instance of a Review class to be able to use the static methods within Review. Non-static methods must be called on an instance of the class.
+
+6. Instead of calling randomAdjective(), we can either call randomPositiveAdj() or randomNegativeAdj() within fakeReview.
