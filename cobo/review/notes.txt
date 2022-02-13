@@ -50,3 +50,81 @@ ACTIVITY 3
 5. You do not need to create an instance of a Review class to be able to use the static methods within Review. Non-static methods must be called on an instance of the class.
 
 6. Instead of calling randomAdjective(), we can either call randomPositiveAdj() or randomNegativeAdj() within fakeReview.
+
+
+ACTIVITY 4
+
+1. You want to be able to communicate your negative feelings but you do not want to bother to write a review.
+
+2. You want to be able to communicate your positive feelings but you do not want to bother to write a review.
+
+3. In the file which contains the original review, instead of putting stars in front of the adjectives which you want to be replaced, put a plus (for a positive adjective) or a minus (for a negative adjective).
+
+5. It will remove the first letter of oneWord.
+
+6. It was necessary to do this because if you look up a word with the symbol in the hasMap, there won't be a value tied to the word since symbols are not included in it.
+
+7. After we take the random positive adjective, we would make sure that it had a sentiment value over 2.0.
+
+
+ACTIVITY 5
+
+1. We chose to implement this program because we remembered this type of code from intro, the process utilized all the proper requirements and it was a topic that interested us the most at the moment.
+
+2. First, we thought of what type of program to implement. Then, we identified what we should apply to the texts, which is the number of times each word appears in the text selected. Then, using the ctrl f keys, we made sure that the most common words followed with our results.
+
+3. public static String getMostCommonWord(String fileName)
+
+The parameters for this method was based off of totalSentiment since we wanted to read in a file by providing the filename as a String and then processing the text in that file similar to how totalSentiment worked.
+
+It is static since there is no need to create an instance of the class to use this method.
+
+4.
+for (String word : text.split(SPACE))
+text.split(SPACE) returns an array of Strings that were seperated by spaces in text.
+
+word = word.toLowerCase();
+word.toLowerCase() returns the word but makes it all lowercase.
+
+5.
+
+6.
+Original Code using for loop:
+for (String word : text.split(SPACE)) {
+    word = removePunctuation(word);
+    word = word.toLowerCase();
+
+    if (wordCounts.get(word) == null) {
+        wordCounts.put(word, 1);
+    } else {
+        wordCounts.put(word, wordCounts.get(word) + 1);
+    }
+
+    // check if this word is now the most common word
+    if (wordCounts.get(word) > wordCounts.get(mostCommonWord)) {
+        mostCommonWord = word;
+    }
+}
+
+New code using while loop:
+
+int counter = 0;
+String words = text.split(SPACE);
+
+while (counter < words.length) {
+    word = words[counter];
+    word = removePunctuation(word);
+    word = word.toLowerCase();
+
+    if (wordCounts.get(word) == null) {
+        wordCounts.put(word, 1);
+    } else {
+        wordCounts.put(word, wordCounts.get(word) + 1);
+    }
+
+    // check if this word is now the most common word
+    if (wordCounts.get(word) > wordCounts.get(mostCommonWord)) {
+        mostCommonWord = word;
+    }
+    counter++;
+}

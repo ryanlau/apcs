@@ -190,6 +190,10 @@ public class Review {
         for (String word: words.split(SPACE)) {
             if (word.indexOf("*") == 0) {
                 fakeReview += randomAdjective() + " ";
+            } else if (word.indexOf("+") == 0) {
+              fakeReview += randomPositiveAdj() + " ";
+            } else if (word.indexOf("-") == 0) {
+              fakeReview += randomNegativeAdj() + " ";
             } else {
                 fakeReview += word + " ";
             }
