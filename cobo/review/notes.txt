@@ -86,7 +86,7 @@ text.split(SPACE) returns an array of Strings that were seperated by spaces in t
 word = word.toLowerCase();
 word.toLowerCase() returns the word but makes it all lowercase.
 
-5.
+5. There are no nested conditionals in our code. 
 
 6.
 Original Code using for loop:
