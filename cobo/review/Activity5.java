@@ -2,14 +2,11 @@
 // APCS pd6
 // L06 -- Read/Review/Expand
 // 2022-02-11f
-// time spent: .5hrs
+// time spent: 2.5hrs
 
 import java.util.Scanner;
 import java.io.File;
 import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Random;
-import java.io.*;
 
 
 public class Activity5 {
@@ -33,7 +30,7 @@ public class Activity5 {
         String text = textToString(fileName);
 
         String mostCommonWord = text.split(SPACE)[0];
-        // this line is needed so that line 49 doesn't return a java.lang.NullPointerException
+        // this line is needed so that line 47 doesn't return a java.lang.NullPointerException
         wordCounts.put(text.split(SPACE)[0], 0);
 
         for (String word : text.split(SPACE)) {

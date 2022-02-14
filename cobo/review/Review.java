@@ -2,14 +2,12 @@
 // APCS pd6
 // L06 -- Read/Review/Expand
 // 2022-02-11f
-// time spent: .5hrs
+// time spent: 2.5hrs
 
 import java.util.Scanner;
 import java.io.File;
 import java.util.HashMap;
 import java.util.ArrayList;
-import java.util.Random;
-import java.io.*;
 
 /**
  * Class that contains helper methods for the Review Lab
