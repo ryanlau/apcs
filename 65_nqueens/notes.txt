@@ -1,0 +1,12 @@
+Team Gnocchi -- Hugo Jenkins (Boary), Ryan Lau (Jon), and Brian Kang (Vivian)
+APCS pd6
+HW65 -- How Many Queens Can a Thinker Place, If a Thinker Can Place Queens...
+2022-02-16w
+time spent: 1.0 hrs
+
+DISCO:
+    0. The algorithm solves board sizes of 20x20 instantly, 30x30 in a few moments, and anything above that over a minute
+    1. The smallest board other than 1x1 that has a possible solutions is a 4x4
+
+QCC:
+    0. How do we generate the other 91 solutions?
