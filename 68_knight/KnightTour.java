@@ -1,8 +1,8 @@
-// Clyde Sinclair
-// APCS pd0
-// HW68 -- recursively probing for a closed cycle
-// 2022-02-28m
-// time spent:  hrs
+// Team Gnocchi -- Hugo Jenkins (Boary), Ryan Lau (Jon), and Brian Kang (Vivian)
+// APCS pd6
+// HW68 -- ...and T-, Tr-, Tri-, Tries Again Until It's Done
+// 2022-02-16w
+// time spent: 2.0 hrs
 
 /***
  * SKELETON
@@ -15,16 +15,25 @@
  * $ java KnightTour [N]
  *
  * ALGO
+ * Basecase: check if _solved is true, if it is, exit the program
+ * Primary basecase: check if there has been n * n + 1 moves, if there is set _solved to true
+ * Other basecase: Check if the move is valid by checking if the space's value is 0, if it is not, just return.
+ * If none of these basecases are satisfied, attempt to move the knight to every possible location by recursively calling the method with the moves parameter increased by 1 and the x and y positions to the position of the move
+ * If all of the recursive calls run without hitting a basecase, reset the current space to 0.
  *
  * DISCO
+ * System.exit(0) exits out of the program and doesn't run any other future code even if it's outside the function it was called in.
+ * Tests that start from the top left generally run faster than ones that start from a random position.
  *
  * QCC
+ * How can we run findTour more than once since it makes use of System.exit()?
+ * Is the algorithmn what the code does in English or is the code the algorithmn in code?
  *
  * Mean execution times for boards of size n*n:
- * n=5   __s    across __ executions
- * n=6   __s    across __ executions
- * n=7   __s    across __ executions
- * n=8   __s    across __ executions
+ * n=5   1.2198s    across 5 executions
+ * n=6   27.8766s   across 5 executions
+ * n=7   ~18m       across 5 executions
+ * n=8   ~25m       across 5 executions
  *
  * POSIX PROTIP: to measure execution time from BASH, use time program:
  * $ time java KnightTour 5
@@ -62,10 +71,11 @@ public class KnightTour
     tf.findTour( 2, 2, 1 );
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    //
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //for random starting location, use lines below:
-    //int startX = //YOUR MATH CONSTRUCT FOR GENERATING A RANDOM LEGAL X VALUE
-    //int startY = //YOUR MATH CONSTRUCT FOR GENERATING A RANDOM LEGAL X VALUE
+    //int startX = (int) (Math.random() * n) + 2;
+    //int startY = (int) (Math.random() * n) + 2;
     //tf.findTour( startX, startY, 1 );   // 1 or 0 ?
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -161,7 +171,7 @@ class TourFinder
     if ( _solved == true ) System.exit(0);
 
     //primary base case: tour completed
-    if ( moves >= _board.length * _board.length - 1) {
+    if ( moves == _sideLength * _sideLength + 1) {
       _solved = true;
       System.out.println( this ); //refresh screen
       return;
@@ -180,7 +190,7 @@ class TourFinder
 
       System.out.println( this ); //refresh screen
 
-      //delay(1000); //uncomment to slow down enough to view
+      //delay(1001); //uncomment to slow down enough to view
 
       /******************************************
        * Recursively try to "solve" (find a tour) from
