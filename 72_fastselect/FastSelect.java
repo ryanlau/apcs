@@ -101,15 +101,14 @@ public class FastSelect
     {
         int start = 0;
         int end = arr.length - 1;
-        int pos = partition(arr, start, end, 0);
+        int pos;
 
         do {
+            pos = partition(arr, start, end, start);
             if (pos > y) {
                 end = pos - 1;
-                pos = partition(arr, start, end, start);
             } else {
                 start = pos + 1;
-                pos = partition(arr, start, end, start);
             }
         } while (pos != y);
 
