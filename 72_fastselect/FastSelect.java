@@ -1,4 +1,4 @@
-// Ryan Lau
+// Team Tin Pigs: Corina Chen, Jing Yi Feng, Ryan Lau
 // APCS pd6
 // HW72: So So Fast
 // 2022-03-09
@@ -93,7 +93,6 @@ public class FastSelect
             }
         }
         swap(end, swaps, arr);
-        // ???
         return swaps;
     }//end partition
 
@@ -102,20 +101,20 @@ public class FastSelect
     {
         int start = 0;
         int end = arr.length - 1;
-        int pos = partition(arr, start, end, (end - start) / 2);
+        int pos = partition(arr, start, end, 0);
+
         do {
             if (pos > y) {
-                start = pos;
-                pos = partition(arr, start, end, (end - start) / 2);
-            } else if (pos < y) {
-                end = pos - 1; // ???
-                pos = partition(arr, start, end, (end - start) / 2);
+                end = pos - 1;
+                pos = partition(arr, start, end, start);
+            } else {
+                start = pos + 1;
+                pos = partition(arr, start, end, start);
             }
-        } while (arr[pos] == y); // ???
+        } while (pos != y);
 
         return arr[pos];
     }
-
 
     //main method for testing
     public static void main( String[] args )
