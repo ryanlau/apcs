@@ -1,7 +1,7 @@
 # Random-Access Memory
-*~Ryan Lau~*\
-*~Ameer Alnasser~*\
-*~Melody Lew~*
+*\~Ryan Lau\~*\
+*\~Ameer Alnasser\~*\
+*\~Melody Lew\~*
 
 This lab was a lot more straight forward much than the previous one with the consumer review.
 This felt a lot like other activities we have done previously with the classes and subclasses.
