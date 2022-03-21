@@ -2,7 +2,7 @@ Random-Access Memory:: Ryan Lau, Ameer Alnasser, Melody Lew
 APCS pd06
 L07: But These Go Up To Eleven
 2022-03-21m
-time spent: 3.0 hrs
+time spent: 3.8 hrs
 
 Activity 2:
     1. Decks contain a list of cards and cards are defined by a suit, point value, and rank.
@@ -40,6 +40,12 @@ Activity 3:
     }
 
     3. The random integers would have to be 0 and 1, in either order
+
+Activity 5:
+    Buggy1: Deck.isEmpty() returns false when the deck is empty when it's supposed to return true.
+    Buggy2: Deck.size() returns 0 when the deck has one card when it's suppposed to return 1.
+    Buggy3: Deck.shuffle() doesn't shuffle the deck in place or doesn't shuffle the deck.
+    Buggy4: The Deck.deal() method is not actually returning the correct element in the list/deck.
 
 
 DISCO:

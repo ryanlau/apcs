@@ -125,6 +125,7 @@ public class DeckTester {
 		int[] v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 		Deck d1 = new Deck(r, s, v);
 		Deck d2 = new Deck(r, s, v);
+
 		assert d1 != d2 : "Decks d1 and d2 are the same physical object.";
 		assert d1.size() == d2.size() : "Deck d1 size of " + d1.size()
 			+ " does not match deck d2 size of " + d2.size() + ".";
