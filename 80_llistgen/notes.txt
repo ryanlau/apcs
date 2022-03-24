@@ -1,0 +1,19 @@
+Tin Pig: Ryan Lau, Jing Yi Feng, Corina Chen
+APCS pd06
+HW 80: Generically Speaking
+2022-03-24r
+time spent: 0.5 hrs
+
+DISCO
+1. We cannot have empty "gangsign" LLists. For example: 
+    LList<> emptygang = new LList<>();
+    You will get an illegal start of type error.
+
+2. However, we can have "gangless" LLists. For example:
+    LList gangless = new LList();
+   And this LList can hold any class.
+    gangless.add(32131);
+    gangless.add("hi");
+
+Q/C/C
+1. Why does the second disco work???
