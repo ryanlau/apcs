@@ -1,0 +1,13 @@
+Tin Pig: Ryan Lau, Jing Yi Feng, Corina Chen
+APCS pd06
+HW 82: Roll Your Own Iterator
+2022-03-28m
+time spent: 0.8 hrs
+
+DISCOS
+1. ArrayList<Integer> al = new ArrayList<Integer>() seems to be the same as ArrayList<Integer> al = new ArrayList<>()
+
+QCC
+1. Should .remove() still point to a node if we are removing the last node?
+2. When should we throw a IllegalStateException if _okToRemove is false and .remove() is called?
+3. What is a default method?
