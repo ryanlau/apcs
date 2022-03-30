@@ -1,0 +1,12 @@
+Tin Pig: Ryan Lau, Jing Yi Feng, Corina Chen
+APCS pd06
+HW 85: Leon Leonwood Stack
+2022-03-30h
+time spent: 0.7hrs
+
+DISCO
+0. The generic type specified in the declaration is what determines the type of the AL/LL.
+
+QCC
+0. What is Z in Stckr?
+1. Would it be meaningful to add a .toString() for Stacks?
