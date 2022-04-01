@@ -1,0 +1,16 @@
+ALGORITHM for EVALUATING A SCHEME EXPRESSION
+    1. Split expression into tokens.
+    2. Create two stacks, one for operations, and one for numbers and closing parentheses.
+    3. Parse over tokens from right to left, adding the tokens to their respective stacks.
+    4. If we get a opening parentheses, check the most recent operation and call unload() with the corresponding op number and numAndParens as the numbers parameter.
+    5. Return the remaining number/answer in the stack.
+
+STACK OF CHOICE
+    ALStack by TiNPiG b/c we don't believe that ALStack has any benefit over LLStack or "ArrayStack", we just choose it at random.
+
+DISCO
+    Remove closing parenthesis from stack when the inner operation is performed.
+    It was more beneficial to parse the expression from the right.
+
+QCC
+    Is there actually an advantage over choosing one of the implementations of Stack?
