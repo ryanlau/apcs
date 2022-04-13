@@ -1,0 +1,15 @@
+Tin Pig: Ryan Lau, Jing Yi Feng, Corina Chen
+APCS pd06
+HW 90: Swabbing the Deque
+2022-04-12
+time spent: 0.5hrs
+
+DISCO
+0. We decided that it would be best to encapsulate a LinkedList since we believe it would allow for constant time adding and removing from the front and the back.
+
+1. The direction of the linkages probably don't matter since we are dealing with doubly linked nodes this time.
+
+2. Make sure to include an 'identifier' for the interface abstract method parameters. Not just the variable type is needed (such as in a UML diagram) but also a variable name.
+
+QCC
+0. We were able to easily implement all of our QQKachoo methods with the methods of LinkedList.
