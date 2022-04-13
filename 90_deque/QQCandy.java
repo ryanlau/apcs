@@ -4,13 +4,13 @@
 // 2022-04-12
 // time spent: 0.5hrs
 
-
 import java.util.LinkedList;
+import java.util.Iterator;
 
-public class QQKachoo<E> implements Deque<E> {
+public class QQCandy<E> implements Deque<E> {
     LinkedList<E> _qq;
 
-    public QQKachoo() {
+    public QQCandy() {
         _qq = new LinkedList<E>();
     }
 
@@ -37,4 +37,29 @@ public class QQKachoo<E> implements Deque<E> {
     public E removeLast() {
         return _qq.removeLast();
     }
+
+    public boolean contains(E element) {
+        return _qq.contains(element);
+    }
+
+    public E peekFirst() {
+        return _qq.peekFirst();
+    }
+
+    public E peekLast() {
+        return _qq.peekLast();
+    }
+
+    public int size() {
+        return _qq.size();
+    }
+
+    public Iterator<E> iterator() {
+        return _qq.iterator();
+    }
+
+    public String toString() {
+        return _qq.toString();
+    };
+
 }
