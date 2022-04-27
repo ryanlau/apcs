@@ -1,7 +1,7 @@
 Tin Pig: Ryan Lau, Jing Yi Feng, Corina Chen
 APCS pd06
-HW 90: Swabbing the Deque
-2022-04-12
+HW 91: Deque the Halls
+2022-04-13
 time spent: 0.5hrs
 
 DISCO
@@ -11,5 +11,9 @@ DISCO
 
 2. Make sure to include an 'identifier' for the interface abstract method parameters. Not just the variable type is needed (such as in a UML diagram) but also a variable name.
 
+3. The difference between get and peek is that get throws a NPE if the Deque is empty but peek will just return null.
+
 QCC
 0. We were able to easily implement all of our QQKachoo methods with the methods of LinkedList.
+
+1. Why is peek() and peekFirst() provided by Java's deque if they do the same job?
