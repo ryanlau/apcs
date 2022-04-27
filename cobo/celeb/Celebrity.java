@@ -1,3 +1,9 @@
+// JIMIN: Ryan Lau, Melody Lew, Paul Serbanescu
+// APCS pd06
+// L09: Some Folks Call It A Charades
+// 2022-04-27
+// time spent: 5 hours
+
 /**
  * Celebrity base class for the Celebrity game.
  * @author cody.henrichsen
@@ -66,7 +72,7 @@ public class Celebrity
 	@Override
 	public String toString()
 	{
-		return _clue + ":" + _answer;
+		return _clue + ": " + _answer;
 	}
 
     public static void main(String[] args) {

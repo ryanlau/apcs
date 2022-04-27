@@ -1,3 +1,10 @@
+// JIMIN: Ryan Lau, Melody Lew, Paul Serbanescu
+// APCS pd06
+// L09: Some Folks Call It A Charades
+// 2022-04-27
+// time spent: 5 hours
+
+
 import java.util.ArrayList;
 
 /**
@@ -66,7 +73,7 @@ public class CelebrityGame
     {
         if (_celebGameList != null && _celebGameList.size() > 0) {
             this._gameCelebrity = _celebGameList.get(0);
-            _gameWindow.replaceScreen("GAME"); 
+            _gameWindow.replaceScreen("GAME");
         }
     }
 
@@ -76,7 +83,7 @@ public class CelebrityGame
 
 	/**
 	 * Adds a Celebrity of specified type to the game list
-	 * 
+	 *
 	 * @param name
 	 *            The name of the celebrity
 	 * @param guess
