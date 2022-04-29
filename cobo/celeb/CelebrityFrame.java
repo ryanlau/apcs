@@ -72,6 +72,7 @@ public class CelebrityFrame extends JFrame
 	public void replaceScreen(String screen)
 	{
         if (screen.equals("START")) {
+            startPanel.updateCount();
             setContentPane(startPanel);
         } else if (screen.equals("GAME")) {
             gamePanel.addClue(controller.sendClue());

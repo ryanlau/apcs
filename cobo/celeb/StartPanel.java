@@ -143,6 +143,11 @@ public class StartPanel extends JPanel
     setupListeners();
   }
 
+  public void updateCount() {
+        celebrityCount = controller.getCelebrityGameSize();
+        celebrityCountLabel.setText(countLabelText + celebrityCount);
+  }
+
   /**
    * Validation method for the text to create a Celebrity instance.
    *
